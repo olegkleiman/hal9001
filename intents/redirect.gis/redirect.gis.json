@@ -1,0 +1,10 @@
+{
+  "name": "2211afba-4823-47b8-b8fe-0fdb1e38e683",
+  "displayName": "redirect.gis",
+  "parameters": [ {
+    "id": "GISPlace",
+    "entityType": "@GISPlace"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 17
+}

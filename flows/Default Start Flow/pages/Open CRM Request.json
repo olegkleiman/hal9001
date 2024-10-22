@@ -1,0 +1,20 @@
+{
+  "name": "bb23aca2-403e-44cc-9aa3-4e11228e0b16",
+  "displayName": "Open CRM Request",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "requested" ]
+      },
+      "languageCode": "he-il"
+    } ],
+    "webhook": "Unified WebHook",
+    "tag": "#crm_request",
+    "nextActionOverride": {
+    
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "7acb428f-39bf-4b47-83f8-ff9ff8d573c7",
+  "displayName": "redirect.ticket_number",
+  "parameters": [ {
+    "id": "ticketNumber",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 2
+}

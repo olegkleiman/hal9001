@@ -1,0 +1,83 @@
+{
+  "name": "c67c2a7c-dd19-48d1-8531-99cd9235d2f0",
+  "displayName": "Collect Address",
+  "form": {
+    "parameters": [ {
+      "displayName": "address",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "set on parameters \"Updated\"" ]
+            },
+            "languageCode": "he-il"
+          } ],
+          "webhook": "Unified WebHook",
+          "tag": "#crm_request",
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.invalid-parameter",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Invalid parameter event handled" ]
+              },
+              "languageCode": "he-il"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "164d2d61-6e52-4aaa-a002-e6ec2f9095bd"
+        } ]
+      },
+      "description": "This parameter captures the address"
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please provide the address" ]
+      },
+      "languageCode": "he-il"
+    } ],
+    "webhook": "Unified WebHook",
+    "tag": "#crm_request",
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.addressValidated = true",
+    "triggerFulfillment": {
+      "webhook": "Unified WebHook",
+      "tag": "#crm_request",
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "79d8a5bf-cb36-49d1-99ac-5c90a577536d"
+  }, {
+    "condition": "$page.params.address.status = \"UPDATED\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "router agent" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "webhook": "Unified WebHook",
+      "tag": "#crm_request",
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "3b3a88ac-2a0e-42a2-8c60-d1e65136ad90"
+  } ],
+  "description": "Pay attention: Form parameter has an 'Invalid Parameter\" event handler!\nCollect the address parameter (DF called this process \"form filling\").\n"
+}

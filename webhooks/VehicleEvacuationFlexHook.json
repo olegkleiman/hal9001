@@ -1,0 +1,33 @@
+{
+  "name": "71eaa201-7846-4810-9eeb-7f6b0e046cf8",
+  "displayName": "VehicleEvacuationFlexHook",
+  "genericWebService": {
+    "uri": "https://vehicle-evacuation-543456251733.me-west1.run.app",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"licenseplatenumber\": \"1\"\n}",
+    "parameterMapping": [ {
+      "key": "description",
+      "value": "$.getLastGriraForRechevResponse.getLastGriraForRechevResult.data.teurSibatGrira"
+    }, {
+      "key": "destination",
+      "value": "$.getLastGriraForRechevResponse.getLastGriraForRechevResult.data.teurChenyon"
+    }, {
+      "key": "errorCode",
+      "value": "$.getLastGriraForRechevResponse.getLastGriraForRechevResult.errorCode"
+    }, {
+      "key": "evacuationPlace",
+      "value": "$.getLastGriraForRechevResponse.getLastGriraForRechevResult.data.makomGrira"
+    }, {
+      "key": "vehicleColor",
+      "value": "$.getLastGriraForRechevResponse.getLastGriraForRechevResult.data.teurTzevaRechev"
+    }, {
+      "key": "vehicleType",
+      "value": "$.getLastGriraForRechevResponse.getLastGriraForRechevResult.data.teurTotzar"
+    } ],
+    "serviceAgentAuth": "ID_TOKEN"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

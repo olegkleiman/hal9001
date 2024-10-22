@@ -1,0 +1,45 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "אבקש לתקן ",
+      "auto": true
+    }, {
+      "text": "ספסל שבור",
+      "parameterId": "CRMSubject",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "מבקש להדביר ",
+      "auto": true
+    }, {
+      "text": "יתושים",
+      "parameterId": "CRMSubject",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "נא הדברת ",
+      "auto": true
+    }, {
+      "text": "יתושים",
+      "parameterId": "CRMSubject",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "לתקן "
+    }, {
+      "text": "ספסל שבור",
+      "parameterId": "CRMSubject"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  } ]
+}

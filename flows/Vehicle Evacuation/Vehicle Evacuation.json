@@ -1,0 +1,45 @@
+{
+  "name": "f6df132a-ecc5-4061-9fc6-ea10e4eee67b",
+  "displayName": "Vehicle Evacuation",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect Car Info",
+    "name": "ab824d20-8bbc-470e-8a4a-5aa2126e968c"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "לא הבנתי. אתה יכול להגיד את זה שוב?", "לא הבנתי את מה שאמרת. מה זה היה?", "אני מתנצל, אתה יכול לומר את זה שוב?", "אני מתנצל, אתה יכול להגיד את זה שוב?", "האם אתה יכול לומר זאת שוב?", "אני מתנצל, לא הבנתי את זה. אתה יכול לנסח מחדש?", "סליחה, מה זה היה?", "עוד פעם אחת?", "מה זה היה?", "תגיד את זה עוד פעם אחת?", "לא הבנתי את זה. אתה יכול לחזור?", "לא הבנתי, תגיד את זה שוב?" ]
+        },
+        "languageCode": "he-il"
+      } ]
+    },
+    "name": "1301f36e-a648-4900-a703-05cf157bd750"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "לא הבנתי. אתה יכול להגיד את זה שוב?", "לא הבנתי את מה שאמרת. מה זה היה?", "אני מתנצל, אתה יכול לומר את זה שוב?", "אני מתנצל, אתה יכול להגיד את זה שוב?", "האם אתה יכול לומר זאת שוב?", "אני מתנצל, לא הבנתי את זה. אתה יכול לנסח מחדש?", "סליחה, מה זה היה?", "עוד פעם אחת?", "מה זה היה?", "תגיד את זה עוד פעם אחת?", "לא הבנתי את זה. אתה יכול לחזור?", "לא הבנתי, תגיד את זה שוב?" ]
+        },
+        "languageCode": "he-il"
+      } ]
+    },
+    "name": "45873f71-1917-4fd7-82e9-3e8e288cf23d"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "4a56b6c9-7e5f-44e0-98d4-acbda4d5cb25",
+    "languageCode": "he-il"
+  } ]
+}

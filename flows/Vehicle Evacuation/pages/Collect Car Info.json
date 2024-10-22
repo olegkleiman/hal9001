@@ -1,0 +1,34 @@
+{
+  "name": "ff7018d9-6128-46e7-9d45-33364143d9c1",
+  "displayName": "Collect Car Info",
+  "form": {
+    "parameters": [ {
+      "displayName": "licensePlateNumber",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "מה מספר לוחית הרישוי של הרכב עבורו נדרש המידע?" ]
+            },
+            "languageCode": "he-il"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      },
+      "redact": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Vehicle Evacuation Hook",
+    "name": "d7f9f70e-d263-481a-b3b4-a67f7ec45054"
+  } ],
+  "description": "Collect the required parameters about the vehicle. (DF called this process \"form filling\")"
+}

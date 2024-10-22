@@ -1,0 +1,51 @@
+{
+  "name": "2c94decd-a1c3-43b2-b8cf-5dabc274b470",
+  "displayName": "Collect Address",
+  "form": {
+    "parameters": [ {
+      "displayName": "address",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "מה הכתובת?" ]
+      },
+      "languageCode": "he-il"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.addressValidated = true",
+    "triggerFulfillment": {
+      "webhook": "Unified WebHook",
+      "tag": "#crm_request",
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Service Request Call (106)",
+    "name": "203c44c9-d7ae-45b9-9679-81f1e196209d"
+  }, {
+    "condition": "$page.params.address.status = \"UPDATED\"",
+    "triggerFulfillment": {
+      "webhook": "Unified WebHook",
+      "tag": "#crm_request",
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "LookbackAddress",
+    "name": "a2663dc8-5795-4c46-b72d-1e24ca611258"
+  } ]
+}

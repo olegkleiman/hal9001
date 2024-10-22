@@ -1,0 +1,11 @@
+{
+  "name": "6e324e1d-abb0-499a-b413-ebc46c09faf8",
+  "displayName": "Unified WebHook",
+  "genericWebService": {
+    "uri": "https://1657-176-12-225-163.ngrok-free.app/api/TlvHook",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

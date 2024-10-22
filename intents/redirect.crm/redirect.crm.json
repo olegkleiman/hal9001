@@ -1,0 +1,10 @@
+{
+  "name": "5b343446-7dc0-4eba-82d8-af8f4c5e5552",
+  "displayName": "redirect.crm",
+  "parameters": [ {
+    "id": "CRMSubject",
+    "entityType": "@CRMSubject"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

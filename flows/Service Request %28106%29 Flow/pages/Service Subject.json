@@ -1,0 +1,35 @@
+{
+  "name": "ed6facfe-c524-4eef-afd3-8f791622ba19",
+  "displayName": "Service Subject",
+  "form": {
+    "parameters": [ {
+      "displayName": "crmsubject",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "מה הנושא של פניתך?" ]
+      },
+      "languageCode": "he-il"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect Address",
+    "name": "7ce5026b-4861-4724-b0cd-bc0a9dd54bac"
+  } ]
+}

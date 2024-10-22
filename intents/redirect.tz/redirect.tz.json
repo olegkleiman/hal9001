@@ -1,0 +1,11 @@
+{
+  "name": "95aa1b7f-5d7e-49ff-8981-5dff8637b753",
+  "displayName": "redirect.tz",
+  "parameters": [ {
+    "id": "number",
+    "entityType": "@sys.number",
+    "redact": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 1
+}

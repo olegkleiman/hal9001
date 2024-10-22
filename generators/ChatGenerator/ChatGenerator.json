@@ -1,0 +1,13 @@
+{
+  "name": "61a5de70-c044-470d-adcd-0920c1df9eea",
+  "displayName": "ChatGenerator",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 4096,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

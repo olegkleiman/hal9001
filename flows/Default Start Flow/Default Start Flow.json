@@ -1,0 +1,255 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "שלום, אני העוזרת האישית שלך. אפשר לשאול אותי על כל דבר בעיר תל אביב ובעירייה. איך אוכל לסייע?" ]
+        },
+        "languageCode": "he-il"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "html": "\u003cb\u003eפעילויות נפוצות\u003c/b\u003e",
+            "type": "html"
+          }, {
+            "options": [ {
+              "text": "פניה למוקד"
+            }, {
+              "text": "פניות שלי"
+            }, {
+              "text": "בדיקת גרירה"
+            }, {
+              "text": "תשלום דוחות חניה שלי"
+            }, {
+              "text": "מקלטים קרובים אליי"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "userId",
+        "value": "054008222"
+      }, {
+        "parameter": "jwt",
+        "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IlRqSGtSaDFxXzBTWXBJUjZhTmE4ZldUWHBWSW9wNWl3SjhQUmc5YjRrNUEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiI5OTNmNTAzZC04MDgxLTRhODQtYjViNS0zMGIzZTdmM2M2NDEiLCJpc3MiOiJodHRwczovL3RsdmZwYjJjcHByLmIyY2xvZ2luLmNvbS90ZnAvNzgxZWMyNGQtOWFhNS00NjI4LTlmYzEtNWExZjEzZGMwNDI0L2IyY18xYV9yb3BjX2tpZXYvdjIuMC8iLCJleHAiOjE3Mjk2MTE5NDMsIm5iZiI6MTcyOTYwODM0Miwic3ViIjoiZDBjM2U2NDktN2EyZS00YmEwLThmZTItMDNkNjZmMDhjMzc0Iiwic2lnbkluTmFtZXMucGhvbmVOdW1iZXIiOiIrOTcyNTQ2ODk5MDk1Iiwic2lnbkluTmFtZXMuY2l0aXplbklkIjoiMDU0MDA4MjIyIiwidXBuIjoiZDBjM2U2NDktN2EyZS00YmEwLThmZTItMDNkNjZmMDhjMzc0QFRsdmZwQjJDUFBSLm9ubWljcm9zb2Z0LmNvbSIsIm5hbWUiOiLXkNeR15nXkdeUINen15jXmdei15kiLCJzaWduSW5OYW1lc0luZm8uZW1haWxBZGRyZXNzIjoia2F0aW5vdl9kQHRlbC1hdml2Lmdvdi5pbCIsImZhbWlseV9uYW1lIjoi16fXmNeZ16LXmSIsImdyb3VwcyI6IltcImRndFwiXSIsInNjcCI6ImFjY2Vzc19hbGwiLCJhenAiOiI5OTNmNTAzZC04MDgxLTRhODQtYjViNS0zMGIzZTdmM2M2NDEiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE3Mjk2MDgzNDJ9.C7V2fksz_SfOtvdaQiZXJ2BszvpH6KXCx2FQYN8NOQzPmaA41kW64n1kG9W6yI33YxjBEYIC0JVLaE8GuAxnfdEhJjReYchLFshtuu1XU5dDVHkk8FwEqZIl7rQgdP8cDO8IdJAKxs7nAQBRmvgbYd3Lprt2NpKjxXpChfYNZc06gEiIs3ryQmaeuDHDAHlG_zW90GBAgeQICAs4QNn--whUwRChdwzxXPweKqF4hFnz5mRkgdOAotdqpsolNQtvdQnHEWzIKeY8C3mB1OXlhBiT7y4R2WFPENVi5LiJc0prkLEpbZ1oqmTrzR0iruM9OqklC2h2soroZRdT0I75JA"
+      }, {
+        "parameter": "longitude",
+        "value": 34.780745000000003
+      }, {
+        "parameter": "latitude",
+        "value": 32.081657
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "ac843de3-0520-4350-bf0f-0d6975046adc"
+  }, {
+    "intent": "redirect.fines.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Parking Tickets",
+    "name": "33a89192-8068-4c07-be35-a4aeeeaf7934"
+  }, {
+    "intent": " redirect.service_requests",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Service Request (106) Flow",
+    "name": "eb7c6a7e-5fdf-436d-931d-c9b0e4b889d0"
+  }, {
+    "intent": "redirect.evacuation",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Vehicle Evacuation",
+    "name": "82616c70-1da4-4b84-b064-62b8e13dce93"
+  }, {
+    "intent": "redirect.appointment",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Appointments",
+    "name": "854c0218-897b-4a2c-8a7d-8fbfc4ce5340"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "17c1e8d4-601c-4257-a7e9-c6aee1cb6483"
+  }, {
+    "intent": "My service requests",
+    "triggerFulfillment": {
+      "webhook": "Unified WebHook",
+      "tag": "#my_service_requests",
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "a84f1d70-45f7-4f9e-9506-af45b89f3c07"
+  }, {
+    "intent": "redirect.agent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "רק שניה. המערכת מחברת אותך." ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "b803383e-e2b5-4ffb-84ec-ec1bd6752b27"
+  }, {
+    "intent": "redirect.gis",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "מציג $session.params.gisplace מסביבך" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "webhook": "Unified WebHook",
+      "tag": "#gis",
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "c3c108e0-4daf-4d33-a7bf-123aa3282917"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Propagation",
+    "name": "82e36ced-2678-4844-928c-fe51fa323e38"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Start Page",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.generative.answer" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "enableGenerativeFallback": true,
+      "generators": [ {
+        "generator": "projects/muni-tlv/locations/global/agents/46727f85-4983-4edb-b8b1-55df166837da/generators/61a5de70-c044-470d-adcd-0920c1df9eea",
+        "outputParameter": "$request.generative.answer"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "4e90a4f0-a800-4bfd-81ba-23db2b2fe764"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "לא הבנתי. אתה יכול להגיד את זה שוב?", "לא הבנתי את מה שאמרת. מה זה היה?", "אני מתנצל, אתה יכול לומר את זה שוב?", "אני מתנצל, אתה יכול להגיד את זה שוב?", "האם אתה יכול לומר זאת שוב?", "אני מתנצל, לא הבנתי את זה. אתה יכול לנסח מחדש?", "סליחה, מה זה היה?", "עוד פעם אחת?", "מה זה היה?", "תגיד את זה עוד פעם אחת?", "לא הבנתי את זה. אתה יכול לחזור?", "לא הבנתי, תגיד את זה שוב?" ]
+        },
+        "languageCode": "he-il"
+      } ]
+    },
+    "name": "a8b8c4cc-a27b-46bb-aba0-2b62925eec04"
+  }, {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "General backend system error" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "d08c17c3-de6d-4f23-857c-b3a4cc0865fe"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.generative.answer === $sys.func.GET_FIELD($sys.func.GET($request.knowledge.sources[0], 0), \"snippet\")" ]
+        },
+        "languageCode": "he-il"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "citations": [ {
+              "anchor": {
+                "href": "$sys.func.GET_FIELD($sys.func.GET($request.knowledge.sources[0], 0), \"uri\")"
+              },
+              "subtitle": "",
+              "title": "$sys.func.GET_FIELD($sys.func.GET($request.knowledge.sources[0], 0), \"title\")"
+            } ],
+            "type": "match_citations"
+          } ] ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "generators": [ {
+        "generator": "projects/muni-tlv/locations/global/agents/46727f85-4983-4edb-b8b1-55df166837da/generators/61899b5a-3658-49d0-a8e4-e040df1ccaef",
+        "inputParameters": [ {
+          "key": "request",
+          "value": "$request.knowledge.answers[0]"
+        } ],
+        "outputParameter": "$request.generative.answer"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "dataStoreConnections": [ {
+      "dataStoreType": "PUBLIC_WEB",
+      "dataStore": "projects/543456251733/locations/global/collections/default_collection/dataStores/tvl-heb_1725633612672",
+      "languageCode": "he-il",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    }, {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/543456251733/locations/global/collections/default_collection/dataStores/pdfs_1725659090034",
+      "languageCode": "he-il",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    }, {
+      "dataStoreType": "FAQ",
+      "dataStore": "projects/543456251733/locations/global/collections/default_collection/dataStores/ds-hal9001-qa_1725664989854",
+      "languageCode": "he-il",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    } ]
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "30a2a274-50ff-490b-b9a1-805bed41d34c",
+    "languageCode": "he-il"
+  } ]
+}

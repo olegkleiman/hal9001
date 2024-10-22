@@ -1,0 +1,11 @@
+{
+  "name": "0d14c979-d411-4f2f-a0f7-6b0dab0c7fb6",
+  "displayName": "Search WebHook",
+  "genericWebService": {
+    "uri": "https://1657-176-12-225-163.ngrok-free.app/api/Search",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

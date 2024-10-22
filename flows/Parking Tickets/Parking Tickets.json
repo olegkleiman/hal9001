@@ -1,0 +1,88 @@
+{
+  "name": "7d999860-c928-4e9d-8859-600f49b1d008",
+  "displayName": "Parking Tickets",
+  "transitionRoutes": [ {
+    "intent": "redirect.fines.overview",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "בשביל לברר האם יש לך דוחות חניה לשלם אני צריכה לפנות למאגרי  מידע של עיריית ת\"א. האם להשתמש במספר ת.ז. שהוזן למערכת? $session.params.userId" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "1ff48803-e975-4677-b1a0-055cfa820f5e"
+  }, {
+    "intent": "redirect.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "משתמשת בת.ז. $session.params.userId" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Fines List Hook",
+    "name": "970e9e57-0c81-4e8d-8317-9f460b51ff6a"
+  }, {
+    "intent": "redirect.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "הקש מספר ת.ז." ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "84d5237d-7061-4a70-b634-6ab52518b568"
+  }, {
+    "intent": "redirect.tz",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Fines List Hook",
+    "name": "cdbd56e2-1ba5-4dfc-9be1-5dea8a934c95"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "לא הבנתי. אתה יכול להגיד את זה שוב?", "לא הבנתי את מה שאמרת. מה זה היה?", "אני מתנצל, אתה יכול לומר את זה שוב?", "אני מתנצל, אתה יכול להגיד את זה שוב?", "האם אתה יכול לומר זאת שוב?", "אני מתנצל, לא הבנתי את זה. אתה יכול לנסח מחדש?", "סליחה, מה זה היה?", "עוד פעם אחת?", "מה זה היה?", "תגיד את זה עוד פעם אחת?", "לא הבנתי את זה. אתה יכול לחזור?", "לא הבנתי, תגיד את זה שוב?" ]
+        },
+        "languageCode": "he-il"
+      } ]
+    },
+    "name": "c3073aec-4292-46ac-a4a5-83c57b98a849"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "לא הבנתי. אתה יכול להגיד את זה שוב?", "לא הבנתי את מה שאמרת. מה זה היה?", "אני מתנצל, אתה יכול לומר את זה שוב?", "אני מתנצל, אתה יכול להגיד את זה שוב?", "האם אתה יכול לומר זאת שוב?", "אני מתנצל, לא הבנתי את זה. אתה יכול לנסח מחדש?", "סליחה, מה זה היה?", "עוד פעם אחת?", "מה זה היה?", "תגיד את זה עוד פעם אחת?", "לא הבנתי את זה. אתה יכול לחזור?", "לא הבנתי, תגיד את זה שוב?" ]
+        },
+        "languageCode": "he-il"
+      } ]
+    },
+    "name": "72b2958e-d075-4add-ad39-67955593d1ce"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "91e0e957-37d8-49e6-854f-2c553b9f5946",
+    "languageCode": "he-il"
+  } ]
+}

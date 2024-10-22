@@ -1,0 +1,16 @@
+{
+  "name": "bf713deb-330a-4394-9268-fbfeeba9300a",
+  "displayName": "Ticket Payment",
+  "form": {
+    "parameters": [ {
+      "displayName": "ticket_number",
+      "required": true,
+      "entityType": "@sys.number-integer",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  }
+}

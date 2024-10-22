@@ -1,0 +1,28 @@
+{
+  "name": "391f390b-5a64-4b21-9c08-e3fd5cf232a9",
+  "displayName": "LookbackAddress",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "הכתובת שהזנת לא נראית נכונה. אנא בחר\\י מהרשימה את הכתובת שיכולה להתאים." ]
+      },
+      "languageCode": "he-il"
+    } ],
+    "webhook": "Unified WebHook",
+    "tag": "#crm_request",
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect Address",
+    "name": "11d1214d-33b0-4098-872d-8f4d63e6a85f"
+  } ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "61899b5a-3658-49d0-a8e4-e040df1ccaef",
+  "displayName": "HALGenerator",
+  "placeholders": [ {
+    "id": "request",
+    "name": "request"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 2048,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

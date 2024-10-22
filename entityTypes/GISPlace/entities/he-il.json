@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "מקלט",
+    "synonyms": [ "מקלט" ],
+    "languageCode": "he-il"
+  }, {
+    "value": "דפיברילטור",
+    "synonyms": [ "דפיברילטור" ],
+    "languageCode": "he-il"
+  }, {
+    "value": "כספומט",
+    "synonyms": [ "כספומט" ],
+    "languageCode": "he-il"
+  }, {
+    "value": "מתקני מחזור",
+    "synonyms": [ "מתקני מחזור" ],
+    "languageCode": "he-il"
+  }, {
+    "value": "משחקיה",
+    "synonyms": [ "משחקיה", "גינת ילדים" ],
+    "languageCode": "he-il"
+  } ]
+}

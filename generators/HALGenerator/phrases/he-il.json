@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Provide the summarization for $request.knowledge.answers[0]. Answer in Hebrew.",
+    "languageCode": "he-il"
+  } ]
+}

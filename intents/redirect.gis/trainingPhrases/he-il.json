@@ -1,0 +1,178 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "איפה יש "
+    }, {
+      "text": "משחקיה",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " בסביבה"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה יש "
+    }, {
+      "text": "מתקני מחזור",
+      "parameterId": "GISPlace",
+      "auto": true
+    }, {
+      "text": " בסביבה"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה נמצאים "
+    }, {
+      "text": "מתקני מחזור",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " קרובים"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "היכן ",
+      "auto": true
+    }, {
+      "text": "כספומט",
+      "parameterId": "GISPlace",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה ",
+      "auto": true
+    }, {
+      "text": "כספומט",
+      "parameterId": "GISPlace",
+      "auto": true
+    }, {
+      "text": " קרוב ביותר",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה נמצא "
+    }, {
+      "text": "כספומט",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " קרוב"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה ה"
+    }, {
+      "text": "מקלט",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " הקרוב ביותר?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה "
+    }, {
+      "text": "מקלטים",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " בסביבי"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "באיזה מקום נמצא "
+    }, {
+      "text": "מקלט",
+      "parameterId": "GISPlace"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "היכן נמצא "
+    }, {
+      "text": "מקלט",
+      "parameterId": "GISPlace"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה נמצא "
+    }, {
+      "text": "חניון",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " קרוב"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "חניונים",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " ציבוריים"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "חניונים",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " פרטיים"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה נמצא "
+    }, {
+      "text": "דפיברילטור",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " קרוב"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "איפה נמצא "
+    }, {
+      "text": "מקלט",
+      "parameterId": "GISPlace"
+    }, {
+      "text": " קרוב"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "דפיברילטור",
+      "parameterId": "GISPlace"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "מקלט",
+      "parameterId": "GISPlace"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  } ]
+}

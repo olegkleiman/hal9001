@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Your task is to answer the question: $last-user-utterance. Answer in Hebrew, cite the sources of the answer with square bracketed numbers.",
+    "languageCode": "he-il"
+  } ]
+}

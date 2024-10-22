@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "ספסל שבור",
+    "synonyms": [ "ספסל שבור" ],
+    "languageCode": "he-il"
+  }, {
+    "value": "אשפה",
+    "synonyms": [ "אשפה" ],
+    "languageCode": "he-il"
+  }, {
+    "value": "יתושים",
+    "synonyms": [ "יתושים" ],
+    "languageCode": "he-il"
+  } ]
+}

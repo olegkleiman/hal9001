@@ -1,0 +1,10 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "313069486",
+      "parameterId": "number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "לשלם דוח מספר "
+    }, {
+      "text": "2001371540",
+      "parameterId": "ticketNumber"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  }, {
+    "parts": [ {
+      "text": "לשלם דוח מספר "
+    }, {
+      "text": "2001373175",
+      "parameterId": "ticketNumber"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "he-il"
+  } ]
+}

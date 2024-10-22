@@ -1,0 +1,37 @@
+{
+  "name": "424dc4bc-641c-4e98-a8bb-587f1f9e0102",
+  "displayName": "Service Request Call (106)",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Unified WebHook",
+    "tag": "#service_request",
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "63208bb1-d73a-45f8-9821-07aac5bbf901"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Backend error with ServiceRequest (106)" ]
+        },
+        "languageCode": "he-il"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "069354ef-753f-4f6f-9e02-826f7e49cb7a"
+  } ]
+}
